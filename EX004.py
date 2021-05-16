@@ -1,3 +1,5 @@
+""" 4. Faça um algoritmo que imprima 10 vezes a frase: “Go Blue”. """
+
 import time as tm
 for sec in range(5, 0, -1):
     tm.sleep(1)

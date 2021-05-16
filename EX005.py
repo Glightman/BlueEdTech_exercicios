@@ -1,3 +1,6 @@
+""" 5. Faça um programa que mostre os valores numéricos inteiros ímpares situados
+na faixa de 0 a 20 """
+
 import time as tm
 for num in range(0,21):
     div = num%2

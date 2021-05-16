@@ -1,17 +1,15 @@
-from random import randint
-computador = randint(0,10)
-print('Sou seu computador... Acabei de pensar em um número entre 0 e 10.')
-print('Será que você consegue adivinhar qual foi?')
-acertou = False
-palpites = 0
-while not acertou:
-    jogador = int(input('Qual é seu palpite?'))
-    palpites += 1
-    if jogador == computador:
-        acertou = True
-    else:
-        if jogador < computador:
-            print('Mais... Tente mais uma vez.')
-        elif jogador > computador:
-            print('Menos...Tente mais uma vez.')
-print('Acertou com {} tentativas. Parbéns!'.format(palpites))
+""" Desafio 1 - Escreva um programa que determine todos os números de 4
+algarismos que possam ser separados em dois números de dois algarismos que
+somados e elevando-se a soma ao quadrado obtenha-se o próprio número.
+Exemplo: 3025 = 55 e 55**2 é igual á 3025 """
+
+num = 0
+for num in range(1000, 9999):
+    div = num/100
+    div2 = div%1
+    conv = div2*100
+    div3 = div//1
+    som = conv+div3
+    mult = som**2
+    if num == mult:
+        print(mult)
